@@ -9,7 +9,7 @@ function writeCards(namesArray, event){
   return thankYouCards
 }
 
-function countDown(integer){
+function countdown(integer){
   while (integer > 0) {
     console.log(integer)
     integer -= 1
