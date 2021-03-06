@@ -1,13 +1,18 @@
-const gifts = ['Lisa', 'Kaitlin', 'Jan' ];
 
-function writeCards(gifts) {
-  let i = 0; // the initialization moves OUTSIDE the body of the loop!
-  while (i < gifts.length) {
-    console.log(`Thank you, ${gifts[i]} for the wonderful birthday card!`);
-    i++; // the iteration moves INSIDE the body of the loop!
+const namesArray = ["Ada", "Brendan", "Ali"]
+
+function writeCards(namesArray, event){
+  let thankYouCards = []
+  for ( let i = 0; i < namesArray.length; i++)
+    thankYouCards.push('Thank you, ${namesArray[i]}, for the wonderful ${event} gift!')
   }
-
-  return gifts;
+  return thankYouCards
 }
 
-writeCards(gifts);
+function countDown(integer){
+  while (integer > 0) {
+    console.log(integer)
+    integer -= 1
+  }
+  console.log(integer)
+}
